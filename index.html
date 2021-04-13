@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Daniel Portillo</title>
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" href="images/Avatar.ico">
+  <link rel="icon" href="images/Logos/Avatar.ico">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Oxygen&family=Satisfy&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/22e099610c.js" crossorigin="anonymous"></script>
@@ -21,7 +21,12 @@
           <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
           <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
           <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-          <li type="button" class="nav__item"><a href="#" class="nav__btn">Contact</a></li>
+          <li type="button" class="nav__item"><a href="#" class="btn nav__btn">Contact</a></li>
+          <div class="hamburger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
         </ul>
       </nav>
 
@@ -51,7 +56,7 @@
           fill="#001C65" />
       </svg>
     </div>
-<div class="container row">
+<div class="container row wrapper">
   
         <div class="card card__skill">
           <img src="images/Skills/Front-End.svg" alt="front-end" class="card__img">
@@ -109,25 +114,33 @@
 
   <section id="projects">
       <div class="container column">
-        <div class="project">
-          <p class="project__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, aliquam labore minus doloremque itaque saepe accusamus eius minima qui doloribus nostrum non, rem consequuntur alias deserunt iusto, a molestias quis iure sit! Ipsum quo, aut perferendis officia hic a magni vero dolor, explicabo minima consequuntur, in modi deleniti illo ea.
-          </p>
-          <a href="https://www.instagram.com/emmascakery/" class="project__link"><img src="images/Logos/logo-acuarela.png" alt="Emma's cakery logo" class="project__img"></a>
+        <div class="project row">
+          <a href="https://www.instagram.com/emmascakery/" data-to-content="Emma's Cakery" class="project__link"><img src="images/Logos/logo-acuarela.png" alt="Emma's cakery logo" class="project__img"></a>
+          <div class="project__text">
+            <p>
+              Emma's Cakery is a small startup business in Chile, they make awesome tea cakes and cookies with love.</p>
+              <p>
+                My first project using JQuery and SASS to develop it.</p>
+          </div>
+         
         </div>
       </div>
 
 <img src="images/Logos/Logo.svg" alt="my_logo" class="projects__logo" aria-hidden="true">
+
+
   </section>
 
   <footer class="footer">
+
     <div class="card contact_me">
-        <h3 class="contact__text">
-          Do you want to talk about a project? 
-        </h3>
-  
-        <a class="contact__btn" href="#" type="button">Get in Touch!</a>
+      <h3 class="contact__text">
+        Do you want to talk about a project? 
+      </h3>
+    
+      <a class="btn contact__btn" href="#" type="button">Get in Touch!</a>
     </div>
+    
 <div class="container">
   <div class="row">
     <div class="footer__me">
@@ -160,6 +173,8 @@
   </div>
 </div>
   </footer>
+
+  <script src="Js/app.js"></script>
 </body>
 
 </html>
