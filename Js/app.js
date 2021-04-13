@@ -25,21 +25,22 @@ const hamburger = document.querySelector(".hamburger")
 const navLinks = document.querySelector(".nav__list")
 const links = document.querySelectorAll(".nav__item")
 
+links.forEach(link => {
+    link.addEventListener("click", (e) => {
+        console.log(e)
+        hamburger.classList.toggle("change");
+        navLinks.classList.toggle("open");
+        links.forEach(link => {
+        link.classList.toggle('fade')
+        })
+    })
+})
+
 hamburger.addEventListener("click", () =>{
     hamburger.classList.toggle("change");
     navLinks.classList.toggle("open");
     links.forEach(link => {
         link.classList.toggle('fade')
-    })
-    links.forEach(link => {
-        link.addEventListener("click", (e) => {
-            console.log(e)
-            hamburger.classList.toggle("change");
-            navLinks.classList.toggle("open");
-            links.forEach(link => {
-            link.classList.toggle('fade')
-    })
-        })
     })
 })
 
