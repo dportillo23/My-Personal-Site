@@ -340,6 +340,7 @@ body {
 }
 
 .project__link::before {
+  font-size: 2rem;
   color: #fff;
   content: attr(data-to-content);
   display: grid;
@@ -362,6 +363,7 @@ body {
 }
 
 .project__link::after {
+  font-size: 2rem;
   color: #fff;
   content: "Go to Website";
   display: grid;
@@ -559,7 +561,7 @@ body {
 
 @media only screen and (min-width: 1970px) {
   html {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
