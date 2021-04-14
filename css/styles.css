@@ -129,6 +129,10 @@ body {
   background-color: var(--col-secondary);
 }
 
+.change {
+  position: fixed;
+}
+
 .change * {
   background: #fff;
 }
@@ -311,7 +315,7 @@ body {
   bottom: 0;
   left: -7%;
   z-index: -1;
-  opacity: 0.7;
+  opacity: 0.75;
 }
 
 .column {
@@ -345,10 +349,10 @@ body {
   align-self: stretch;
 }
 
-
 .project__img {
   width: 100%;
 }
+
 
 .project__link::before {
   font-size: 2rem;
@@ -584,84 +588,20 @@ body {
     font-size: 14px;
   }
 
+@media only screen and (max-width:  1280px) {
+   html {
+    font-size: 12px;
+   }
+
   .contact_me {
     width: 75%;
   }
 }
 
-@media only screen and (max-width: 680px) {
+@media (orientation: portrait) {
 
   html {
-    font-size: 14px;
-  }
-
-  .hero {
-    min-height: 50vh;
-  }
-
-  .hero__title {
-    flex-direction: column;
-  }
-
-  .hero__title img {
-    width: 30%;
-    position: relative;
-    margin: 0 auto;
-    left: 0;
-  }
-
-  .hero__greeting h2 {
-    margin-top: 1em;
-  }
-
-  .project {
-    padding-bottom: 0;
-  }
-
-  .row {
-    flex-direction: column;
-    gap: 4em;
-  }
-
-  .project {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .project__link {
-    width: 60%;
-  }
-
-  .project__text {
-    width: 100%;
-    text-align: center;
-  }
-
-  .contact_me {
-    width: 80%;
-    height: none;
-    font-size: 1.5rem;
-  }
-
-  .nav.row {
-    flex-direction: row;
-  }
-
-  .footer__me {
-    width: 100%;
-  }
-
-  .footer__social {
-    width: 100%;
-  }
-
-}
-
-@media  (orientation: portrait) {
-
-  html {
-    font-size: 24px;
+    font-size: 18px;
   }
 
    .nav__list {
@@ -742,6 +682,10 @@ body {
     margin-top: 1em;
   }
 
+  .hero__image {
+    width: 80%;
+  }
+
   .project {
     padding-bottom: 0;
   }
@@ -768,9 +712,152 @@ body {
   }
 
   .contact_me {
-    width: 80%;
+    width: 95%;
     height: none;
-    font-size: 1.5rem;
+    font-size: 4vw;
+  }
+
+  .contact__btn {
+    flex-basis: 60%;
+    font-size: 3.5vw;
+  }
+
+  .nav.row {
+    flex-direction: row;
+  }
+
+  .footer__me {
+    width: 100%;
+  }
+
+  .footer__social {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 720px) {
+
+  html {
+    font-size: 20px;
+  }
+
+   .nav__list {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: linear-gradient(to bottom right, var(--col-primary), var(--col-secondary));
+    z-index: 2;
+    height: 100vh;
+    width: 100%;
+    clip-path: circle(50px at 90% -10%);
+    -webkit-clip-path: circle(50px at 90% -10%);
+    transition: all 1s ease-out;
+  }
+
+  .nav__link::after {
+    background: #fff;
+  }
+
+  .nav__item {
+    opacity: 0;
+  }
+
+  .nav__item:nth-child(1) {
+    transition: all 0.5s ease 0.2s;
+  }
+  .nav__item:nth-child(2) {
+    transition: all 0.5s ease 0.4s;
+  }
+  .nav__item:nth-child(3) {
+    transition: all 0.5s ease 0.6s;
+  }
+  .nav__item:nth-child(4) {
+    transition: all 0.5s ease 0.8s;
+  }
+  .nav__item.fade {
+    opacity: 1;
+  }
+
+  .nav__list.open {
+    clip-path: circle(calc(150vh) at 90% -10%);
+    -webkit-clip-path: circle(150vh at 90% -10%);
+  }
+
+  .nav__link {
+    font-size: 2rem;
+    color: white;
+  }
+
+  .hamburger {
+    display: inline;
+    position: absolute;
+    top: 50%;
+    right: 10%; 
+    transform: translateY(-50%);
+    z-index: 3;
+  }
+
+  .hero {
+    min-height: 50vh;
+  }
+
+  .hero__title {
+    flex-direction: column;
+  }
+
+  .hero__title img {
+    width: 30%;
+    position: relative;
+    margin: 0 auto;
+    left: 0;
+  }
+
+  .hero__greeting h2 {
+    margin-top: 1em;
+  }
+
+  .hero__image {
+    width: 80%;
+  }
+
+  .project {
+    padding-bottom: 0;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 4em;
+  }
+
+  .project {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project__link {
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .project__text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact_me {
+    width: 95%;
+    height: none;
+    font-size: 4vw;
+  }
+
+  .contact__btn {
+    flex-basis: 60%;
+    font-size: 3.5vw;
   }
 
   .nav.row {

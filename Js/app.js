@@ -38,6 +38,7 @@ links.forEach(link => {
 
 hamburger.addEventListener("click", () =>{
     hamburger.classList.toggle("change");
+    
     navLinks.classList.toggle("open");
     links.forEach(link => {
         link.classList.toggle('fade')
