@@ -1,35 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/contact_styles.css">
-    <link rel="icon" href="images/Logos/avataaars 1.svg">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen&family=Satisfy&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/Logos/avataaars 1.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen&family=Satisfy&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/22e099610c.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
+
 <body>
-  <nav class="nav row">
-    <div class="nav__logo"><a href="index.html"><img src="images/Logos/Logo.svg" alt="Logo"></a></div>
-    <ul class="nav__list">
-      <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-      <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-      <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-      <li type="button" class="nav__item"><a href="contact.html" class="btn nav__btn">Contact</a></li>
-      <div class="hamburger">
-        <div class="bar bar1"></div>
-        <div class="bar bar2"></div>
-        <div class="bar bar3"></div>
+  <header class="container">
+    <nav class="nav row">
+      <div class="nav__logo"><a href="index.html"><img src="images/Logos/Logo.svg" alt="Logo"></a></div>
+      <ul class="nav__list">
+        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="index.html#skills" class="nav__link">Skills</a></li>
+        <li class="nav__item"><a href="index.html#projects" class="nav__link">Projects</a></li>
+        <li type="button" class="nav__item"><a href="contact.html" class="btn nav__btn">Contact</a></li>
+        <div class="hamburger">
+          <div class="bar bar1"></div>
+          <div class="bar bar2"></div>
+          <div class="bar bar3"></div>
+        </div>
+      </ul>
+    </nav>
+
+    <div class="hero--contact">
+      <div class="hero__title">
+        <img class="contact__avatar" src="images/Logos/avataaars 1.svg" alt="avatar-pic">
+        <div class="hero__greeting">
+          <h1 class="hero__me">Contact me!</h1>
+        </div>
+
+
+  </header>
+
+  <section class="sec__contact">
+    <div class="container">
+      <div class="card card__contact">
+        <h1 class="contact__title">Hi, thank you for reaching out! <br>Please let me know how I can help you</h1>
+        <form action="" method="post">
+          <div class="form__box">
+            <div class="form__item">
+              <div class="input__box"><input type="text" id="name" class="contact__input" name="contactName">
+                <label for="name" class="contact__label"><span class="contact__span">Name:</span></label>
+              </div>
+              <div class="input__box"><input type="text" id="email" class="contact__input" name="contactEmail">
+                <label for="email" class="contact__label"><span class="contact__span">Email:</span></label>
+              </div>
+            </div>
+            <div class="form__item">
+              <div class="input__box"><textarea class="contact__input contact__textarea" id="message"
+                  placeholder="Let me know how can I help you :)" name="contactMessage"></textarea>
+                <label for="message" class="contact__label">
+                  <span class="contact__span">Message:</span>
+                </label>
+              </div>
+            </div>
+            <div class="form__item"><input type="submit" value="Contact Me!" class="btn contact__btn"></div>
+          </div>
+        </form>
       </div>
-    </ul>
-  </nav>
-  
-        
-    </header>
-    
+    </div>
+  </section>
+
+
+  <footer class="footer">
+
+    <div class="container">
+      <div class="row">
+        <div class="footer__me">
+          <div class="footer__pics">
+            <img src="images/Logos/NEW_PIC.png" alt="" class="profile__pic">
+            <div class="vs__code_div"><img src="images/VS_Code.png" alt="vs-code-logo"></div>
+            <p>I ❤️ VS Code</p>
+          </div>
+
+          <div class="footer__greetings">
+            <h1>Hello!</h1>
+            <p>I’m a civil engineer, with a master in Structural, Foundation and Materials Engineering who now discover
+              a love for programming.</p>
+            <p>I started with web development where I spent lot of hours having fun and learning new interesting things.
+              I’m also a Python enthusiast, I love that is really powerful but at the same time very clean and readable.
+            </p>
+          </div>
+        </div>
+
+        <div class="footer__social">
+          <a class="footer__social__link" href="https://github.com/dportillo23"><i class="fab fa-github"></i></a>
+          <a class="footer__social__link" href="https://www.linkedin.com/in/daniel-portillo23"><i
+              class="fab fa-linkedin-in"></i></a>
+          <a class="footer__social__link" href="https://twitter.com/DanielEPortillo"><i class="fab fa-twitter"></i></a>
+          <a class="footer__social__link" href="https://www.instagram.com/devportillo/"><i
+              class="fab fa-instagram"></i></a>
+
+        </div>
+
+
+      </div>
+      <div class="footer__end">
+        <p class="copyright">© <span class="year">2021</span>. Made and powered by me</p>
+        <img src="images/Logos/Logo_black&white.svg" alt="" class="footler__logo">
+      </div>
+    </div>
+  </footer>
+
+  <script src="Js/app.js"></script>
+
 </body>
+
 </html>

@@ -1,0 +1,82 @@
+.hero--contact {
+    padding: 5em 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 50vh;
+    text-align: center;
+}
+
+.contact__avatar {
+    width: 10%;
+}
+
+.sec__contact {
+    background: linear-gradient(to bottom, $col-primary 50%, $col-secondary);
+    min-height: 100vh;
+    display: flex;
+    padding: 5em 0;
+}
+
+.card__contact {
+    padding: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact__title {
+    font-size: 2.5rem;
+    width: 75%;
+    text-align: center;
+}
+
+.form__box {
+    font: $ff-primary;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__item {
+    margin: 1.5em;
+    flex-basis: 100%;
+    display:flex;
+}
+
+.contact__input {
+    position: relative;
+    font-size: 1.2rem;
+    width: 100%;
+    margin: 1em;
+    border: none;
+    border-radius: 0.25em;
+    padding: 0.5em 1.5em;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(2rem);
+
+    &:focus {
+        border: solid $col-accent 2px;
+        outline: none;
+    }
+}
+
+.input__box {
+    position: relative;
+    margin: 0 1em;
+}
+
+.contact__textarea {
+    width: 100%;
+    min-height: 30vh;
+}
+
+.contact__label {
+    position: absolute;
+    font: $ff-primary;
+    top: 2em;
+    left: 2em;
+    color: $col-accent;
+}
