@@ -373,13 +373,6 @@ body {
   width: 35%;
 }
 
-.card__skill:hover .card__skills_logos {
-  -webkit-transform: scale(1, 1);
-          transform: scale(1, 1);
-  -webkit-transform: translateZ(3rem);
-          transform: translateZ(3rem);
-}
-
 /* Projects Section */
 #projects {
   min-height: 100vh;
@@ -735,7 +728,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 50vh;
+  min-height: 40vh;
   text-align: center;
 }
 
@@ -771,7 +764,7 @@ body {
 }
 
 .contact__title {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   width: 75%;
   text-align: center;
 }
