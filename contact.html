@@ -41,31 +41,36 @@
   </header>
 
   <section class="sec__contact">
-    <div class="container">
+    <div class="container center">
       <div class="card card__contact">
         <h1 class="contact__title">Hi, thank you for reaching out! <br>Please let me know how I can help you</h1>
-        <form action="" method="post">
-          <div class="form__box">
-            <div class="form__item">
-              <div class="input__box"><input type="text" id="name" class="contact__input" name="contactName">
-                <label for="name" class="contact__label"><span class="contact__span">Name:</span></label>
+        <div class="form__container">
+
+          <form action="" method="post">
+            <div class="form__box">
+              <div class="form__item single">
+                <input type="text" id="name" class="contact__input" name="contactName">
+                <label for="name" class="contact__label"><span class="contact__span">Name</span></label>
               </div>
-              <div class="input__box"><input type="text" id="email" class="contact__input" name="contactEmail">
-                <label for="email" class="contact__label"><span class="contact__span">Email:</span></label>
+
+              <div class="form__item single"><input type="text" id="email" class="contact__input" name="contactEmail">
+                <label for="email" class="contact__label"><span class="contact__span">Email</span></label>
               </div>
-            </div>
-            <div class="form__item">
-              <div class="input__box"><textarea class="contact__input contact__textarea" id="message"
-                  placeholder="Let me know how can I help you :)" name="contactMessage"></textarea>
+
+              <div class="form__item double">
+                <textarea class="contact__input contact__textarea" id="message" name="contactMessage"></textarea>
                 <label for="message" class="contact__label">
-                  <span class="contact__span">Message:</span>
+                  <span class="contact__span">Message</span>
                 </label>
               </div>
-            </div>
-            <div class="form__item"><input type="submit" value="Contact Me!" class="btn contact__btn"></div>
+
+            
+            <div class="form__item form__btn"><input type="submit" value="Send!" class="btn contact__button"></div>
           </div>
+        </div>
         </form>
       </div>
+    </div>
     </div>
   </section>
 

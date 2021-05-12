@@ -40,7 +40,7 @@ body {
 }
 
 .btn {
-    display: grid;
+    display: flex;
     place-items: center;
     text-decoration: none;
     letter-spacing: 1.2;
@@ -49,6 +49,7 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.2);
     padding: 0.5em 1.5em;
     border-radius: 3rem;
+    outline: none;
 
     &:hover {
         background-clip: text;

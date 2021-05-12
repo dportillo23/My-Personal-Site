@@ -19,11 +19,18 @@
     padding: 5em 0;
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .card__contact {
-    padding: 5em;
+    padding: 3em 0;
+    width: 60%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -31,52 +38,97 @@
     font-size: 2.2rem;
     width: 75%;
     text-align: center;
+    margin-bottom: 1em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .form__box {
     font: $ff-primary;
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7, 0.5fr);
+    gap: 1em;
 }
 
 .form__item {
-    margin: 1.5em;
-    flex-basis: 100%;
-    display:flex;
+    position: relative;
+    display: flex;
+}
+
+.single {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.double {
+    grid-column: span 2;
+    grid-row: span 5;
+}
+
+.form__btn {
+    align-self: center;
+    justify-self: center;
+    margin-top: 1em;
+    width: 35%;
+    grid-column: span 2;
+    grid-row: span 1;
+
+}
+
+.contact__button {
+    font-size: 1rem;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: bolder;
+    position: relative;
+    border: none;
 }
 
 .contact__input {
     position: relative;
     font-size: 1.2rem;
     width: 100%;
-    margin: 1em;
     border: none;
     border-radius: 0.25em;
-    padding: 0.5em 1.5em;
+    padding: 0.5em 1em 0;
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(2rem);
+    box-sizing: content-box;
 
     &:focus {
         border: solid $col-accent 2px;
         outline: none;
     }
+
+    &:focus .contact__label {
+
+    }
 }
 
 .input__box {
     position: relative;
-    margin: 0 1em;
-}
-
-.contact__textarea {
-    width: 100%;
-    min-height: 30vh;
 }
 
 .contact__label {
     position: absolute;
     font: $ff-primary;
-    top: 2em;
-    left: 2em;
+    font-size: 1.2rem;
+    top: 0.5em;
+    left: 1.1em;
     color: $col-accent;
+    cursor: text;
 }
