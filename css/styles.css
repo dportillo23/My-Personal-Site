@@ -1119,7 +1119,6 @@ form {
         grid-template-columns: 1fr;
     -ms-grid-rows: (0.5fr)[8];
         grid-template-rows: repeat(8, 0.5fr);
-    gap: 1em;
   }
   .double {
     -ms-grid-column: 1;
@@ -1311,7 +1310,6 @@ form {
         grid-template-columns: 1fr;
     -ms-grid-rows: (0.5fr)[8];
         grid-template-rows: repeat(8, 0.5fr);
-    gap: 1em;
   }
 }
 
