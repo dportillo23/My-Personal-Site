@@ -41,7 +41,8 @@ body {
 
 .btn {
     display: flex;
-    place-items: center;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     letter-spacing: 1.2;
     color: #fff;
@@ -342,6 +343,7 @@ body {
     font-weight: bolder;
     position: relative;
     max-width: 400px;
+
 }
 
 /* Footer */
