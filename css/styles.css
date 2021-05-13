@@ -819,7 +819,7 @@ form {
       grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: (0.5fr)[7];
       grid-template-rows: repeat(7, 0.5fr);
-  gap: 1em;
+  gap: 2em;
 }
 
 .form__item {
@@ -890,6 +890,20 @@ form {
 .contact__input:focus {
   border: solid #001C65 2px;
   outline: none;
+  -webkit-box-shadow: 0 0 20px #6F42FF;
+          box-shadow: 0 0 20px #6F42FF;
+}
+
+.contact__input:focus + .contact__label {
+  font-size: 1rem;
+  -webkit-transform: translate(0.5em, -1.4em);
+          transform: translate(0.5em, -1.4em);
+}
+
+.contact__input:not(:placeholder-shown) + .contact__label {
+  font-size: 1rem;
+  -webkit-transform: translate(0.5em, -1.4em);
+          transform: translate(0.5em, -1.4em);
 }
 
 .input__box {
@@ -897,13 +911,19 @@ form {
 }
 
 .contact__label {
+  color: #fff;
   position: absolute;
-  font: "Oxygen", sans-serif;
   font-size: 1.2rem;
-  top: 0.5em;
-  left: 1.1em;
   color: #001C65;
   pointer-events: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: translate(1.1em, 0.3em);
+          transform: translate(1.1em, 0.3em);
+}
+
+.contact__span {
+  color: #fff;
 }
 
 .margin--bottom {
