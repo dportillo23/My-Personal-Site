@@ -6,6 +6,11 @@
   margin: 0;
 }
 
+.message_development {
+  color: #6F42FF;
+  text-shadow: 0 0 5px #3EA3FF;
+}
+
 body {
   font-family: "Oxygen", sans-serif;
   margin: 0;
