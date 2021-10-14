@@ -5,6 +5,8 @@
     margin: 0;
 }
 
+
+
 //  Variables
 
 // Colors
@@ -16,6 +18,10 @@ $col-accent: #001C65;
 $ff-primary: 'Oxygen', sans-serif;
 $ff-accent: 'Satisfy', cursive;
 
+.message_development {
+    color: $col-primary;
+    text-shadow: 0 0 5px $col-secondary;
+}
 
 body {
     font-family: $ff-primary;
